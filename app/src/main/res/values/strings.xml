@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WakeUp</string>
+    <string name="ADD">ADD</string>
+    <string name="text">No Alarm</string>
+    <string name="fragmentText">00:00</string>
+    <string name="clock">00:00</string>
+    <string name="ringtone">Choose ringtone</string>
+    <string name="delete">Delete</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    <string name="extra_details">Show Details</string>
+    <string name="vibrate">VIBRATE</string>
+    <string name="repeat">REPEAT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splashicon">SplashIcon</string>
+    <string name="turnoff">Alarm off</string>
+
+
+</resources>

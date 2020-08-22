@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:text="@string/text"
+        app:layout_constraintBottom_toTopOf="@+id/add_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/add_button"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_button"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:elevation="2dp">
+
+
+            <FrameLayout
+                android:id="@+id/fragment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <FrameLayout
+                android:id="@+id/fragment2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment1" />
+
+            <FrameLayout
+                android:id="@+id/fragment3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment2" />
+
+
+            <FrameLayout
+                android:id="@+id/fragment4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment3" />
+
+            <FrameLayout
+                android:id="@+id/fragment5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment4" />
+
+            <FrameLayout
+                android:id="@+id/fragment6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment5" />
+
+            <FrameLayout
+                android:id="@+id/fragment7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment6" />
+
+            <FrameLayout
+                android:id="@+id/fragment8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment7" />
+
+            <FrameLayout
+                android:id="@+id/fragment9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment8" />
+
+            <FrameLayout
+                android:id="@+id/fragment10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment9" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/scrollView"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="5dp"
+        >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="16dp"
+            android:text="@string/ADD" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
